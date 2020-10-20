@@ -10,11 +10,13 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let cach = URLCache.init(memoryCapacity: 700 * 700 * 4 * 100, diskCapacity: 700 * 700 * 4 * 100)
+        URLCache.shared = cach
+        
+        print("\(URLCache.shared.memoryCapacity) \(URLCache.shared.diskCapacity)")
         return true
     }
 

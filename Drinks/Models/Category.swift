@@ -1,5 +1,5 @@
 //
-//  Drinks.swift
+//  Category.swift
 //  Drinks
 //
 //  Created by Andrii Zuiok on 14.09.2020.
@@ -9,10 +9,10 @@
 import Foundation
 
 
-// MARK: - Drinks
-public struct Drinks: Codable {
+// MARK: - Category
+public struct Category: Codable {
     
-    var categoryName: String?
+    var name: String?
     var isVisible: Bool = true
     
     public var drinks: [Drink]?

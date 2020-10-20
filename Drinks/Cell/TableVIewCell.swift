@@ -9,9 +9,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
-    var onReuse: ()->Void = {}
-    
+        
     let drinkImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -52,11 +50,14 @@ class TableViewCell: UITableViewCell {
         ])
         
     }
- 
+
+    func display(image: UIImage?) {
+        drinkImageView.image = image
+    }
     
     override func prepareForReuse() {
-      drinkImageView.image = nil
-      drinkImageView.cancelImageLoad()
+        drinkImageView.image = nil
     }
+    
 }
 

@@ -1,5 +1,5 @@
 //
-//  Model.swift
+//  DrinksCategories.swift
 //  Drinks
 //
 //  Created by Andrii Zuiok on 14.09.2020.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-
-
-// MARK: - Drinks
+// MARK: - DrinksCategories
 public struct DrinksCategories: Codable {
     public var drinksCategories: [DrinkCategory]?
 
@@ -23,7 +21,7 @@ public struct DrinksCategories: Codable {
     }
 }
 
-// MARK: - Drink
+// MARK: - DrinkCategory
 public struct DrinkCategory: Codable {
     public var name: String?
     
